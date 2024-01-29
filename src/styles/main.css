@@ -1,7 +1,10 @@
 @import url(reset.css);
 
-.container {
+.container{
     display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url("../images/wall.png");
 }
 
 .menu{
@@ -12,4 +15,35 @@
     width: 100%;
     color: #fff;
     background-color: #000000;
+    border-bottom: 5px solid #ffd700;
 }
+
+.menu-time h2:nth-child(2), .menu-score h2:nth-child(2){
+    margin-top: 1rem;
+}
+
+.menu-lives{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.panel{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.square{
+    height: 150px;
+    width: 150px;
+    border: 1px solid #000000;
+    background-color: #cef6e8;
+}
+
+.enemy{
+    background-image: url("/src/images/ralph.png");
+    background-size: cover;
+}
+
